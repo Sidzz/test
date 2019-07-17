@@ -1,0 +1,145 @@
+
+
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Helvetica;
+}
+
+p {
+  color: gray;
+  margin: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin-left: 25px;
+  color: #518c7a;
+  font-size: 2.5em;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  /*color: #7a518c;*/
+  color: black;
+}
+
+hr{
+  text-align: right;
+}
+
+
+.header, .navigation, .content, .footer, .titlename {
+  display: flex;
+}
+
+@keyframes fadein {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+
+@keyframes fadeinright {
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+
+.titlename {
+  float: left;
+  width: 17%;
+  height: calc(100% - 550px);
+  flex-wrap: wrap;
+  align-content: flex-end;
+  animation-name: fadeinright;
+  animation-duration: 5s;
+}
+
+.header {
+  width: 83%;
+  height: calc(100% - 550px);
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+
+.navigation {
+  float: left;
+  width: 17%;
+  height: calc(100% - 150px);
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: column;
+/*  background-color: #f1f1f1;*/
+}
+
+.content {
+  width: 83%;
+  height: calc(100% - 150px);
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.footer {
+  clear: both;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navi-box {
+  margin-left: 25px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+/*  animation-name: fadein;
+  animation-duration: 3s;*/
+}
+
+.top-box {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 15px;
+/*  animation-name: fadein;
+  animation-duration: 3s;*/
+}
+
+.content-box {
+  background-color: #EEE;
+  width: 375px;
+  height: 250px;
+  margin: 1.5px;
+  text-align: center;
+/*  animation-name: fadein;
+  animation-duration: 7s;*/
+
+}
+
+.content-box:hover {
+  background-color: lightgray;
+}
+
+img:hover {
+  opacity: 0.75;
+}
+
+
+
+
+
+
+
